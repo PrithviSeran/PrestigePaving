@@ -1113,7 +1113,7 @@ function Home() {
               <span className="testimonials-rating">4.9 / 5 · 200+ reviews</span>
             </div>
           </div>
-          <div className="testimonials-grid">
+          <div className="testimonials-grid" role="region" aria-label="Client testimonials, scroll horizontally to see more">
             {[
               {
                 quote: "Our driveway looked tired and grey — after sealing it looks brand new. They showed up on time, explained the process, and the price matched the quote exactly. Already recommended them to our neighbours.",
@@ -1129,6 +1129,41 @@ function Home() {
                 quote: "Honest advice — they told us sealing was enough instead of pushing a full repave. Work was done in one day and they left the property clean. Will use them again when it's time to reseal.",
                 name: "David K.",
                 role: "Residential · Vaughan",
+              },
+              {
+                quote: "Booked them after getting three quotes — Prestige was the most thorough on the walk-through and didn't try to upsell. Crack-fill and seal turned out beautifully. Driveway looks ten years younger.",
+                name: "Priya R.",
+                role: "Residential · Brampton",
+              },
+              {
+                quote: "I manage six condo townhouse blocks and these guys have done all of them over the last two years. Consistent quality, fair pricing, and they handle resident notices without me having to chase.",
+                name: "Marco L.",
+                role: "Condo Board · Etobicoke",
+              },
+              {
+                quote: "From the quote to the final coat it was four days total. Clean edges, no overspray on the garage or grass, and the finish is a deep matte black. Exactly what we were hoping for.",
+                name: "Jenny H.",
+                role: "Residential · Oakville",
+              },
+              {
+                quote: "Our church lot had potholes and faded lines for years. They patched, sealed, and re-striped the whole thing on a Saturday so we didn't miss a single service. Above and beyond.",
+                name: "Pastor Allan W.",
+                role: "Community · Scarborough",
+              },
+              {
+                quote: "Asphalt repair on our shared laneway — three neighbours, one quote, zero drama. Crew was polite, answered all our questions, and the seam work where the old and new asphalt meet is invisible.",
+                name: "Rebecca S.",
+                role: "Residential · Toronto",
+              },
+              {
+                quote: "Used Prestige for our restaurant parking lot. They worked overnight so we never closed. Showed up exactly when they said, left it spotless, and the lines are crisp. Highly recommend.",
+                name: "Aaron P.",
+                role: "Restaurant Owner · Markham",
+              },
+              {
+                quote: "Second time using them. Five years between seals on our driveway and it held up perfectly through GTA winters. Booked again without even comparing prices — that says it all.",
+                name: "Lina C.",
+                role: "Residential · Richmond Hill",
               },
             ].map((t, i) => {
               const initial = t.name.trim().charAt(0);
